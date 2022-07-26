@@ -1,4 +1,17 @@
 package fr.minesales.middleware.teamb.factories;
 
-public class SquadFactory {
+import fr.minesales.middleware.teamb.entities.Squad;
+
+public abstract class SquadFactory {
+    public Squad createSquad(int belief, int nbHeros) {
+        Squad squad = new Squad(belief);
+
+        HeroFactory heroFactory = new HeroFactory();
+
+        for (int i = 0; i < nbHeros; i++) {
+            squad.addMember(heroFactory.createHero(belief));
+        }
+
+        return squad;
+    }
 }
