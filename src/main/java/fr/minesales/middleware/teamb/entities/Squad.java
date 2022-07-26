@@ -1,6 +1,7 @@
 package fr.minesales.middleware.teamb.entities;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.stream.Stream;
 

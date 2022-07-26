@@ -2,7 +2,7 @@ package fr.minesales.middleware.teamb.factories;
 
 import fr.minesales.middleware.teamb.entities.Squad;
 
-public abstract class SquadFactory {
+public class SquadFactory {
     public Squad createSquad(int belief, int nbHeros) {
         Squad squad = new Squad(belief);
 
