@@ -1,14 +1,19 @@
 package fr.minesales.middleware.teamb.entities;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.stream.Stream;
 
+@Getter
 public class Squad {
 
     private final int belief;
 
+    @Getter(AccessLevel.NONE)
     private Collection<Hero> member;
 
     public Squad(int belief) {

@@ -1,9 +1,12 @@
 package fr.minesales.middleware.teamb.entities;
 
+import lombok.Getter;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Optional;
 
+@Getter
 public class Fight {
     private final Squad[] fighters;
 
@@ -14,10 +17,6 @@ public class Fight {
         } else {
             this.fighters = fighters;
         }
-    }
-
-    public Squad[] getFighters() {
-        return fighters;
     }
 
     public Squad getWinner() {
